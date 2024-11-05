@@ -28,12 +28,14 @@ How to Use:
 - Your can register or login: 
 'localhost:3000/api/auth/resister' [POST]
 'localhost:3000/api/auth/login' [POST]
+```bash
 {
     "name": "test User",
     "phoneNumber": "7488901822",
     "password": "123456"
 }
 - On login your will get below response. You can copy token. 
+```bash
 {
     "user": {
         "status": 200,
@@ -49,6 +51,7 @@ Authorization: `Bearer copied_token`
 ## Contact
 - To create contact, after adding authorization token:
 In body pass similar format, email is optional, and make [POST] request to 'localhost:3000/api/contact: 
+```bash
 {
     "name": "John Doe",
     "phoneNumber": "+9876543220",
@@ -73,4 +76,3 @@ In body pass similar format, email is optional, and make [POST] request to 'loca
 ## Security Measure:
 - Added middleware to validate phone number and authentication.
 - Encrypted password before storing to db
-# contact-api
